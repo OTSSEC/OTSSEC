@@ -7,7 +7,7 @@
 Instagram: instagram.com/tarikssener
 Twitter  : twitter.com/tarikseneer
 -  Pronouns: Hacker , Coder 💻
-
+💻  THM in the top %4 💻
 <!--
 **OTSSEC/OTSSEC** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
