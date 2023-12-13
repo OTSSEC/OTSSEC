@@ -4,7 +4,7 @@
 - 💻 I’m currently learning web hacking and coding  💻
 - 💬 Ask me about ...
 - 📫 How to reach me: 
-Instagram: instagram.com/tarikssener/
+Instagram: instagram.com/tarikssener
 Twitter  : twitter.com/tarikseneer
 -  Pronouns: Hacker , Coder 💻
 
