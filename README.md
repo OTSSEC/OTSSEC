@@ -2,10 +2,7 @@
 
 - 🔭 I’m currently working on cyber security
 - 💻 I’m currently learning web hacking and coding  💻
-- 💬 Ask me about ...
-- 📫 How to reach me: 
-- Instagram: instagram.com/tarikssener
-- Twitter  : twitter.com/tarikseneer
+- 💬 Ask me about Cyber Security, Pentesting, Coding.
 -  Pronouns: Hacker , Coder 💻
 -💻  THM in the top %4 💻
 <!--
