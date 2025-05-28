@@ -1,0 +1,28 @@
+Level 8 -> Level 9
+  sort data.txt | uniq -u 
+sort ile data.txt verileri sırala
+uniq -u ile tekrar etmeyen veriyi bul.
+
+Level 9 -> Level 10
+grep -a '^=' data.txt
+grep komutu ile filtreleriz
+-a ise normalde okunamayan (non-ASCII) karakterler var ve bu yüzden -a ile binary
+olarak değil, metin olarak işle komutu veririz.
+'^=' ile = veya == === ==== ...  geçenleri ararız. 
+
+Level 10 -> Level 11
+cat data.txt ile aldığımız VERİ
+echo "VERİ" | base64 -d
+base64 bi tool ve -d ile decode ediyoruz ve gelen sonuç şifre
+
+Level 11 -> Level 12
+data.txt içerisindeki ROT13 algoritmasıyle şifrelenmiş
+tr 'A-Za-z' 'N-ZA-Mn-za-m' < data.txt kodu girilmeli
+tr : karakter dönüştürme komutu
+'A-Za-z': küçük ve büyük harfleri seçer
+'N-ZA-Mn-za-m': her harfi 13 karakter kaydırır.
+< data.txt : data.txt dosyasını giriş olarak verir.
+
+Level 11 -> Level 12
+lvl11 şifre : 7x16WNeHIi5YkIhWsfFıqoognUTyj9Q4
+
