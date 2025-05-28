@@ -1,3 +1,5 @@
+overthewire.org/wargames/bandit
+
 Level 8 -> Level 9
   sort data.txt | uniq -u 
 sort ile data.txt verileri sırala
@@ -23,6 +25,6 @@ tr : karakter dönüştürme komutu
 'N-ZA-Mn-za-m': her harfi 13 karakter kaydırır.
 < data.txt : data.txt dosyasını giriş olarak verir.
 
-Level 11 -> Level 12
+Level 12 -> Level 13
 lvl11 şifre : 7x16WNeHIi5YkIhWsfFıqoognUTyj9Q4
 
