@@ -26,5 +26,73 @@ tr : karakter dönüştürme komutu
 < data.txt : data.txt dosyasını giriş olarak verir.
 
 Level 12 -> Level 13
-lvl11 şifre : 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
+lvl12 şifre : 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
+
+cd /tmp
+  tmp dizinine git
+mkdir tarik
+  tarik adında bir dosya oluştur.
+cp data.txt /tmp/tarik
+  data.txt'yi oluşturduğum dosyaya kopyaladım. Dosya üzerinde işlem yapacağım kopyası üzerinde çalışma yapmak mantıklı.
+cd /tmp/tarik 
+  tarik dizinine git
+cat data.txt | xxd -r > hexadump
+  data.txt bir hexdump dosyası -> xxd- r ile dosyayı tekrar ikili dosyaya çevirdik. ve hexdump adında bir dosyaya yazdırdık.
+file hexdump
+  hexdump dosyasının türünü öğrendik
+mv hexdump hexdump.gz
+  gzip dosyası olduğu için uzantısını değiştirdik.
+gzip -d hexdump.gz
+  dosyayı decompress ediyorum yani açıyorum
+file hexdump
+mv hexdump hexdump.bz2
+  dosya kontrolünü yine yaptım ve dosyanın bzip olduğunu gördüm ve uzantısını bz2 olarak değiştirdim.
+bzip2 -d hexdump.bz2
+  dosyayı açıyorum
+mv hexdump hexdump.gz
+  dosyayı kontrol et gzip olduğu için tekrar adını değiştirdim
+gzip -d hexdump.gz
+  tekrar açtım
+file hexdump 
+  dosyayı kontrol ettim dosya artık tar dosyası
+tar -xvf hexdump 
+  x = çıkar v=ne yaptığını göster f: dosya adı
+tar -xvf data5.bin
+  bunu da açtım
+mv data6.bin data6.bin.bz2
+  dosya bz uzantılı çıktı adını bzip2 ile açabilmek adına değiştirdim 
+bzip2 -d data6.bin.bz2
+  dosyayı açtım
+tar -xvf data6.bin
+  doyayı açtım ve file ile kontrol et dosya gzip dosyası
+mv data8.bin data8.bin.gz
+  gzip ile dosyayı açabilmek adına uzantısını .gz yaptık.
+gzip -d data8.bin.gz
+  dosyayı açtık
+cat data8.bin
+  dosyayı okuduk ve çıkan şifre
+
+Level 13 -> Level 14
+ssh bandit14@localhost -p 2220 -i sshkey.private
+  bandit14e bağlanır.
+cat /etc/bandit_pass/bandit14
+  şifre okunur.
+
+Level 14 -> Level 15
+echo "lvl14 şifresi" | nc localhost 30000
+  lvl 14 şifresi 30000 portuna gönderildiğinde şifre alınabilir.
+
+Level 15 -> Level 16
+openssl s_client -quiet -connect localhost:30001
+  openssl şifreli bağlantılar gibi yerlerde kullanılır bir kütüphane
+  s_client ssl client modudur SSL/TLC bağlantısı kurmak için kullanılır.
+  -quiet gereksiz dönütleri siler.
+  -connect bağlantı yerini gösterir.
+bu komutu çalıştırdıktan sonra bizden bir şey daha ister buraya 15. bölüm şifresini gönder 16 şifresi gelsin cano 
+
+Level 16 -> Level 17
+
+
+
+
 
